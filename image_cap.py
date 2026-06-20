@@ -7,9 +7,9 @@ processor = AutoProcessor.from_pretrained("Salesforce/blip-image-captioning-base
 model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 # Load your image, DON'T FORGET TO WRITE YOUR IMAGE NAME
-img_path = "Tepeta.jpeg"
+img_path = "1000060929.jpg"
 # convert it into an RGB format 
-image = Image.open("https://www.getyourguide.com/es-es/plovdiv-l32528/lugares-de-interes-y-monumentos-tc1146/").convert('RGB')
+image = Image.open(img_path).convert('RGB')
 
 # You do not need a question for image captioning
 text = "imagen de"
